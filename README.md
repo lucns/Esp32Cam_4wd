@@ -3,8 +3,8 @@
 This is a WiFi controlled mini car/robot using an Android App. In the same, the Esp32-Cam is used using UDP protocol to transfer the camera frames and the communication between the app and the MCU.
 
 The camera is 2Mpixel Ov2640. 25fps at 800x600 size frame.
-Data rate is over 200~700Kbps in 25fps at 800x600 size frame. The android uses the bitmap encoder and show frames in screen, received by UDP protocol.
-WiFi signal at >-80dbm, framerate is slow... 5~15fps using Esp32 board antenna.
+Data rate is over 200-700Kbps in 25fps at 800x600 size frame. The android uses the bitmap encoder and show frames in screen, received by UDP protocol.
+WiFi signal at >-80dbm, framerate is slow... 5-15fps using Esp32 board antenna.
 
 App was developed in Java.
 
