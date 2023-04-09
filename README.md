@@ -6,6 +6,9 @@ The camera is 2Mpixel Ov2640. 25fps at 800x600 size frame.
 Data rate is over 200-700Kbps in 25fps at 800x600 size frame. The android uses the bitmap encoder and show frames in screen, received by UDP protocol.
 WiFi signal at >-80dbm, framerate is slow... 5-15fps using Esp32 board antenna.
 
+The eletronic circuit was design in KiCad EDA - Schematic Capture & PCB Design Software.
+Board is burned in TOTEM 25 Laser Engraver.
+
 App was developed in Java.
 
 Tested in Galaxy A70 Android 11 & Arduino IDE.
