@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/dialog_background"
+    android:elevation="@dimen/margin"
+    android:padding="@dimen/margin">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3"
+        android:layout_marginTop="@dimen/margin_2"
+        android:text="@string/speeds"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <TextView
+        android:id="@+id/textRunSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_marginStart="@dimen/margin_3"
+        android:layout_marginTop="@dimen/margin_3"
+        android:text="@string/run_speed"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/textPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_toEndOf="@+id/textRunSpeed"
+        android:text="@string/maximum_level" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPercent"
+        android:max="1023"
+        android:progress="1023"
+        android:progressTint="@color/main"
+        android:thumbTint="@color/main" />
+
+    <TextView
+        android:id="@+id/textBendSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar"
+        android:layout_marginStart="@dimen/margin_3"
+        android:layout_marginTop="@dimen/margin_3"
+        android:text="@string/bend_speed"
+        android:textColor="@color/gray" />
+
+    <TextView
+        android:id="@+id/textPercent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_toEndOf="@+id/textBendSpeed"
+        android:text="@string/maximum_level" />
+
+    <SeekBar
+        android:id="@+id/seekbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textPercent2"
+        android:max="50"
+        android:progress="50"
+        android:progressTint="@color/main"
+        android:thumbTint="@color/main" />
+
+    <TextView
+        android:id="@+id/textTimeOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar2"
+        android:layout_marginStart="@dimen/margin_3"
+        android:layout_marginTop="@dimen/margin_3"
+        android:text="@string/time_on" />
+
+    <TextView
+        android:id="@+id/textTimeOnValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbar2"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_toEndOf="@+id/textTimeOn"
+        android:text="@string/time_fifty" />
+
+    <SeekBar
+        android:id="@+id/seekbarTimeOn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTimeOnValue"
+        android:max="90"
+        android:progress="40"
+        android:progressTint="@color/main"
+        android:thumbTint="@color/main" />
+
+    <TextView
+        android:id="@+id/textTimeOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbarTimeOn"
+        android:layout_marginStart="@dimen/margin_3"
+        android:layout_marginTop="@dimen/margin_3"
+        android:text="@string/time_off" />
+
+    <TextView
+        android:id="@+id/textTimeOffValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekbarTimeOn"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_3"
+        android:layout_toEndOf="@+id/textTimeOff"
+        android:text="@string/time_fifty" />
+
+    <SeekBar
+        android:id="@+id/seekbarTimeOff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTimeOffValue"
+        android:max="90"
+        android:progress="40"
+        android:progressTint="@color/main"
+        android:thumbTint="@color/main" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbarTimeOff"
+        android:layout_marginStart="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin"
+        android:checked="false"
+        android:text="@string/pulsed_rotation" />
+
+    <Button
+        android:id="@+id/buttonPositive"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_3"
+        android:background="@drawable/button_transparent"
+        android:text="@android:string/ok" />
+</RelativeLayout>
