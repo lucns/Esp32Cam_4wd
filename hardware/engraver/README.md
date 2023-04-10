@@ -1,6 +1,3 @@
-Kicad exports the circuit design in SVG format, so it will be necessary to convert the SVG to G-Code, as this is the format accepted by the laser CNC. 
-This can be done using a small piece of software developed by me, and made in Java, to perform this conversion. 
-SvgToGcode.jar is an executable that serves to carry out this conversion.
-.nc is a extension for g-code acept for engravers.
+O Kicad exporta o desenho do circuito no formado SVG. Atualmente não existe nenhum conversor adequado que faça a conversao de SVG para G-CODE. Então desenvolvi um softare em java que realiza essa tarefa. Ele é o SvgToGcode.jar sendo um executavel. O mesmo importa o arquivo no formato .SVG, gerado pelo Kicad e converte pra bitmap (.BMP), com isso é possivel editar a imagem do tipo bitmap, no Photoshop. Cada pixel do da imagem equivale a um passo do motor da CNC. Depois de fazer quaisquer alteraçoes da imagem bitmap, basta abri-la novamente no SvgToGcode.jar e clickar no botao "Gerar Gcode". Será gerado o Limits.nc e o "nome_do_arquivo.nc".
 
 ![circuit_laser_design](https://user-images.githubusercontent.com/16022034/230806145-c21f5b56-b6b5-4d8d-bc4b-eba4c8a50133.png)
