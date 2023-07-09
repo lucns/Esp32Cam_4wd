@@ -1,0 +1,1 @@
+Compilar na Arduino IDE.
