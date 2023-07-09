@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@drawable/dialog_background"
+    android:elevation="@dimen/margin"
+    android:padding="@dimen/margin_3">
+
+    <com.esp32_4wd.views.IndeterminateThreeBalls
+        android:id="@+id/progressBar"
+        android:layout_width="12dp"
+        android:layout_height="36dp"
+        android:layout_alignTop="@id/textTitle"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin" />
+
+    <!--
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/main" />
+        -->
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/progressBar"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_12"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/progressBar"
+        android:textColor="@color/gray_8" />
+
+    <Button
+        android:id="@+id/buttonNegative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/button_transparent"
+        android:text="@android:string/cancel"
+        android:textColor="@drawable/text_state" />
+</RelativeLayout>
